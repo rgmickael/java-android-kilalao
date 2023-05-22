@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Kilalao</string>
+    <string name="lbl01">Entrer une valeur entre (1 - 100)</string>
+    <string name="buttonGo">Lancer</string>
+    <string name="strGreater">Veuillez saisir une valeur plus grande</string>
+    <string name="strSmaller">Veuillez saisir une valeur plus petit</string>
+    <string name="strEqual">Féliciatation, vous avez trouvé le nombre</string>
+    <string name="strMessage">Félicitation, \n Vous avez trouvé en %d coups, \n Est ce que vous-voulez recommencer?</string>
+    <string name="strTry"> \n Il vous reste %d essai</string>
+    <string name="strNo">Non</string>
+    <string name="strYes">Oui</string>
+    <string name="strValid">Veuillez entrer un nombre valide entre 1 - 100</string>
+</resources>
