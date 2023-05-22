@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kilalao</string>
+    <string name="lbl01">Enter a value between (0 - 100)</string>
+    <string name="buttonGo">Run</string>
+    <string name="strGreater">Enter a greater value</string>
+    <string name="strSmaller">Enter a smaller value</string>
+    <string name="strEqual">Congratulation, you have guessed the number</string>
+    <string name="strMessage">Congratulation, \n You have guessed the number in %d attempts, \n Do you want to play again ?</string>
+    <string name="strTry"> \n You have % remaining tries</string>
+    <string name="strNo">No</string>
+    <string name="strYes">Yes</string>
+    <string name="strValid">Please enter a valid number between 1 -100</string>
+</resources>
