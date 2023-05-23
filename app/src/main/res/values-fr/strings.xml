@@ -11,4 +11,8 @@
     <string name="strNo">Non</string>
     <string name="strYes">Oui</string>
     <string name="strValid">Veuillez entrer un nombre valide entre 1 - 100</string>
+    <string name="strSettings">Paramètres</string>
+    <string name="strAbout">A propos</string>
+    <string name="strSettingsContent">Pas besoin parametrer</string>
+    <string name="sideBarContent">Contenu du side bar</string>
 </resources>

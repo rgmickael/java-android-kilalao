@@ -6,9 +6,13 @@
     <string name="strGreater">Enter a greater value</string>
     <string name="strSmaller">Enter a smaller value</string>
     <string name="strEqual">Congratulation, you have guessed the number</string>
-    <string name="strMessage">Congratulation, \n You have guessed the number in %d attempts, \n Do you want to play again ?</string>
-    <string name="strTry"> \n You have % remaining tries</string>
+    <string name="strMessage">Congratulation,\nYou have guessed the number in %d attempts,\nDo you want to play again ?</string>
+    <string name="strTry">\nYou have %d remaining tries</string>
     <string name="strNo">No</string>
     <string name="strYes">Yes</string>
     <string name="strValid">Please enter a valid number between 1 -100</string>
+    <string name="strSettings">Settings</string>
+    <string name="strAbout">About</string>
+    <string name="strSettingsContent">No need to tweak the settings</string>
+    <string name="sideBarContent">DropDown Sidebar Content</string>
 </resources>

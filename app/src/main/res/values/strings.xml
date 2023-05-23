@@ -5,9 +5,13 @@
     <string name="strGreater">Veuillez saisir une valeur plus grande</string>
     <string name="strSmaller">Veuillez saisir une valeur plus petit</string>
     <string name="strEqual">Féliciatation, vous avez trouvé le nombre</string>
-    <string name="strMessage">Félicitation, \n Vous avez trouvé en %d coups, \n Est ce que vous-voulez recommencer ?</string>
+    <string name="strMessage">Félicitation,\n Vous avez trouvé en %d coups,\n Est ce que vous-voulez recommencer ?</string>
     <string name="strTry"> \n Il vous reste %d essai</string>
     <string name="strNo">Non</string>
     <string name="strYes">Oui</string>
     <string name="strValid">Veuillez entrer un nombre valide entre 1 - 100</string>
+    <string name="strSettings">Paramètres</string>
+    <string name="strAbout">A propos</string>
+    <string name="strSettingsContent">Pas besoin parametrer</string>
+    <string name="sideBarContent">Contenu Sidebar Haut-Bas</string>
 </resources>

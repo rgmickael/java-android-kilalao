@@ -5,9 +5,12 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView textViewLog;
     private TextView textResult;
     private ProgressBar preogressBarScore;
+    private LinearLayout sidebar;
 
     private int nbToFind;
     private int score;
@@ -34,16 +38,52 @@ public class MainActivity extends AppCompatActivity {
         textViewLog = (TextView) findViewById(R.id.textViewLog);
         textResult = (TextView) findViewById(R.id.textResult);
         preogressBarScore = (ProgressBar) findViewById(R.id.preogressBarScore);
+        sidebar = (LinearLayout) findViewById(R.id.sidebar);
 
         buttonGo.setOnClickListener(buttonGoListener);
-
         init();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        //return super.onCreateOptionsMenu(menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.menu_other:
+                Toast.makeText(MainActivity.this, "Kilalao v1", Toast.LENGTH_LONG).show();
+                return true;
+
+            case R.id.menu_settings:
+                Toast.makeText(MainActivity.this, getString(R.string.strSettingsContent), Toast.LENGTH_LONG).show();
+                return true;
+
+            case R.id.menu_humberger:
+                Toast.makeText(MainActivity.this, "Humberger", Toast.LENGTH_LONG).show();
+
+                if(sidebar.getVisibility() == 0){
+                    sidebar.setVisibility(8);
+                }else{
+                    sidebar.setVisibility(0);
+                }
+
+                editTextNb.requestFocus();
+
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
     }
 
     private void init(){
         score = 0;
         nbToFind = 1 + (int) (Math.random() * 100); //1-100
-
         Log.i("KILALAO", "Number to find : "+nbToFind);
 
         preogressBarScore.setProgress(score);
@@ -71,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
         retryAlert.setButton(AlertDialog.BUTTON_NEGATIVE, getString(R.string.strNo), new AlertDialog.OnClickListener(){
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                finish();
+                finish(); //method android
                 Log.i("KILALAO", "App exited");
             }
         });
